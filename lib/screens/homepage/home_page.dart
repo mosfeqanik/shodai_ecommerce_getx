@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:shodai_ecomerce/screens/components/my_drawer.dart';
 import 'package:shodai_ecomerce/utils/app_colors.dart';
 import 'package:shodai_ecomerce/utils/app_strings.dart';
 import 'package:shodai_ecomerce/utils/assets_strings.dart';
@@ -38,10 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.white,
             ),
           ),
-          const SizedBox(width: 10,)
+          const SizedBox(width: 15,)
         ],
       ),
-      drawer: Drawer(),
+      drawer: MyDrawerPart(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

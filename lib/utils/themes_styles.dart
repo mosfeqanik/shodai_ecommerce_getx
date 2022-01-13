@@ -11,6 +11,15 @@ class TextThemes {
     color: AppColors.kwhiteColor,
   );
 
-
+  static final TextStyle DrawerListItemBlack = GoogleFonts.openSans(
+    fontSize: 25,
+    fontWeight: FontWeight.w500,
+    color: AppColors.kTenBlackColor,
+  );
+  static final TextStyle DrawerLoginButtonTextColor = GoogleFonts.openSans(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: AppColors.kPrimaryGreenColor,
+  );
 
 }
