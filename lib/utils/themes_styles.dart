@@ -10,9 +10,13 @@ class TextThemes {
     fontWeight: FontWeight.w500,
     color: AppColors.kwhiteColor,
   );
-
+  static final TextStyle DrawerListBottomColorWhite = GoogleFonts.openSans(
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kwhiteColor,
+  );
   static final TextStyle DrawerListItemBlack = GoogleFonts.openSans(
-    fontSize: 25,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
     color: AppColors.kTenBlackColor,
   );

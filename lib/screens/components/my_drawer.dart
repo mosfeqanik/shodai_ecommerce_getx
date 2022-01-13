@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shodai_ecomerce/utils/app_colors.dart';
 import 'package:shodai_ecomerce/utils/assets_strings.dart';
 import 'package:shodai_ecomerce/utils/themes_styles.dart';
@@ -50,54 +51,159 @@ class MyDrawerPart extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home),
+            leading: Image.asset(
+              AssetStrings.Hygeine_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Home',
+              'Hygiene',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.perm_identity_outlined),
+            leading: Image.asset(
+              AssetStrings.Breakfast_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Profile',
+              'Breakfast & Snacks',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.space_dashboard_outlined),
+            leading: Image.asset(
+              AssetStrings.Cooking_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Orders',
+              'Cooking',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.favorite_border_outlined),
+            leading: Image.asset(
+              AssetStrings.Meat_And_Fish_PNG,
+              height: 45,
+            ),
             title: Text(
-              'My Wishlists',
+              'Meat And Fish',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.mode_comment_outlined),
+            leading: Image.asset(
+              AssetStrings.Fruits_And_Vegetable_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Message',
+              'Fruits And Vegetable',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.account_balance_wallet_outlined),
+            leading: Image.asset(
+              AssetStrings.Dairy_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Home',
+              'Dairy',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
           ListTile(
-            leading: Icon(Icons.logout_outlined),
+            leading: Image.asset(
+              AssetStrings.Frozen_And_Canned_PNG,
+              height: 45,
+            ),
             title: Text(
-              'Logout',
+              'Frozen And Canned',
               style: TextThemes.DrawerListItemBlack,
             ),
           ),
+          ListTile(
+            leading: Image.asset(
+              AssetStrings.Beverages_PNG,
+              height: 45,
+            ),
+            title: Text(
+              'Beverages',
+              style: TextThemes.DrawerListItemBlack,
+            ),
+          ),
+          ListTile(
+            leading: Image.asset(
+              AssetStrings.Kids_care_PNG,
+              height: 45,
+            ),
+            title: Text(
+              'Kids care',
+              style: TextThemes.DrawerListItemBlack,
+            ),
+          ),
+          ListTile(
+            leading: Image.asset(
+              AssetStrings.Personal_PNG,
+              height: 45,
+            ),
+            title: Text(
+              'Personal care',
+              style: TextThemes.DrawerListItemBlack,
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              margin: EdgeInsets.only(top: 10),
+              padding: EdgeInsets.only(top: 10,bottom: 20,right: 20,left: 20),
+              color: AppColors.kOrangeColor,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                    Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.phone_outlined,
+                            size: 30,
+                            color: AppColors.kwhiteColor,
+                          ),
+                        ),
+                        Text("Call Us",style: TextThemes.DrawerListBottomColorWhite,)
+                      ],
+                    ),
+                  Column(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          FontAwesomeIcons.question,
+                          size: 30,
+                          color: AppColors.kwhiteColor,
+                        ),
+                      ),
+                      Text("FAQ",style: TextThemes.DrawerListBottomColorWhite,)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.question_answer,
+                          size: 30,
+                          color: AppColors.kwhiteColor,
+                        ),
+                      ),
+                      Text("Chat Now",style: TextThemes.DrawerListBottomColorWhite,)
+                    ],
+                  )
+                ],
+              ),
+            ),
+          )
+
+
         ],
       ),
     );
