@@ -1,69 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:shodai_ecomerce/screens/homepage/home_page.dart';
+
 
 void main() {
-  runApp( MyApp());
+  runApp( ShodaiMamaApp());
 }
 
-class MyApp extends StatelessWidget {
+class ShodaiMamaApp extends StatelessWidget {
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    const MaterialColor kPrimaryColor = MaterialColor(
+      0xFF0E7AC7,
+      <int, Color>{
+        50: Color(0xFF006a4e),
+        100: Color(0xFF006a4e),
+        200: Color(0xFF006a4e),
+        300: Color(0xFF006a4e),
+        400: Color(0xFF006a4e),
+        500: Color(0xFF006a4e),
+        600: Color(0xFF006a4e),
+        700: Color(0xFF006a4e),
+        800: Color(0xFF006a4e),
+        900: Color(0xFF006a4e),
+      },
+    );
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: kPrimaryColor,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key key,  this.title}) : super(key: key);
-  final String title;
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      appBar: AppBar(
-
-        title: Text(widget.title),
-      ),
-      body: Center(
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
