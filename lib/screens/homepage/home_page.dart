@@ -58,8 +58,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+
+        child: SvgPicture.asset(
+          AssetStrings.Cart_Icon_SVG,
+          width: 25,
+          height: 25,
+          color: Colors.white,
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
