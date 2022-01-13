@@ -2,7 +2,7 @@ class AppStrings {
   AppStrings._();
   static const String SETTINGS = 'Settings';
 
-  static const String LATEST_NOTIFICATIONS = 'LATEST NOTIFICATION';
+  static const String Home  = 'Home';
   static const String NOTIFICATIONS = 'Notifications';
   static const String LOGOUT = 'Logout';
   static const String CLOSE = 'Close';
