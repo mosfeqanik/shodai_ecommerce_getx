@@ -123,6 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text('ShodaiMama Offers',
                     style: TextThemes.OffersHeadingTextBlack),
               ),
+              //offer part
               Container(
                 width: 220,
                 height: 200,
@@ -148,11 +149,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],),
                       ),
-
                     ],
                   ),
                 ),
               ),
+
             ],
           ),
         ),
