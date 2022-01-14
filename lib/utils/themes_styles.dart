@@ -35,4 +35,35 @@ class TextThemes {
     fontWeight: FontWeight.w700,
     color: AppColors.kLightBlueColor,
   );
+  static final TextStyle HeadingTextBanglaStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kSecondaryGreyColor,
+  );
+
+  static final TextStyle GridHeadingTextBlackColorStyle = GoogleFonts.openSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kTenBlackColor,
+  );
+  static final TextStyle GridQuantityTextGreyColorStyle = GoogleFonts.openSans(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.kSecondaryGreyColor,
+  );
+  static final TextStyle GridpriceTextGreyColorStyle = GoogleFonts.openSans(
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kTenBlackColor,
+  );
+  static final TextStyle GridStatusTextGreyColorStyle = GoogleFonts.openSans(
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    color: AppColors.kSecondaryGreyColor,
+  );
+  static final TextStyle AddToCartWhiteTextStyle = GoogleFonts.openSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: Colors.white,
+  );
 }

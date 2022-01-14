@@ -74,6 +74,7 @@ class AppStrings {
 
   static const String TEXTFIELD_HEADER_NAME = 'Name';
   static const String Banner_Offer_Bangla = 'সদাইমামা বার-বি-কিউ ফেস্ট';
+  static const String Heading_Bangla = 'গুনগত মান বজায় রাখার জন্য পচনশীল খাদ্যপণ্য সরবরাহ করা হয় সকাল ৮-১১ টা পর্যন্ত ।';
 
 
 
