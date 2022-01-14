@@ -27,4 +27,7 @@ class AssetStrings {
   static const String CarouselBanner3_PNG = 'assets/images/carousel3.png';
   static const String CarouselBanner4_PNG = 'assets/images/carousel4.png';
   static const String CarouselBanner5_PNG = 'assets/images/carousel5.png';
+  static const String Offer_Banner_PNG = 'assets/images/banner.jpeg';
+
+
 }

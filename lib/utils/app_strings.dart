@@ -73,6 +73,7 @@ class AppStrings {
 
 
   static const String TEXTFIELD_HEADER_NAME = 'Name';
+  static const String Banner_Offer_Bangla = 'সদাইমামা বার-বি-কিউ ফেস্ট';
 
 
 

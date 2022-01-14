@@ -25,6 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.kwhiteBGColor,
       appBar: AppBar(
         title: Text(
           AppStrings.Home,
@@ -60,6 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              ///Slider
               AspectRatio(
                 aspectRatio: 19 / 7.5,
                 child: CarouselSlider(
@@ -85,6 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
+              ///Location Bar
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 color: AppColors.kPrimaryGreenColor,
@@ -93,17 +96,63 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      children:  [
-                        Icon(Icons.location_on_outlined,color: AppColors.kwhiteColor,),
-                        SizedBox(width: 20,),
-                        Text('Adabor',style: TextThemes.AppBartitleColoWhite,)
+                      children: [
+                        const Icon(
+                          Icons.location_on_outlined,
+                          color: AppColors.kwhiteColor,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          'Adabor',
+                          style: TextThemes.AppBartitleColoWhite,
+                        )
                       ],
                     ),
-                    Icon(Icons.edit_location_outlined,color: AppColors.kwhiteColor,),
-
+                    Icon(
+                      Icons.edit_location_outlined,
+                      color: AppColors.kwhiteColor,
+                    ),
                   ],
                 ),
-              )
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                child: Text('ShodaiMama Offers',
+                    style: TextThemes.OffersHeadingTextBlack),
+              ),
+              Container(
+                width: 220,
+                height: 200,
+                child: Card(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image(
+                        image: AssetImage(AssetStrings.Offer_Banner_PNG),
+                        fit: BoxFit.fill,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                          Text(AppStrings.Banner_Offer_Bangla,style: TextThemes.offerTextStyle,),
+                          const Icon(
+                            Icons.chevron_right_outlined,
+                            size: 20,
+                            color: AppColors.kLightBlueColor,
+                          ),
+                        ],),
+                      ),
+
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),

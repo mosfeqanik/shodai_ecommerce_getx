@@ -10,6 +10,11 @@ class TextThemes {
     fontWeight: FontWeight.w500,
     color: AppColors.kwhiteColor,
   );
+  static final TextStyle OffersHeadingTextBlack = GoogleFonts.openSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kTenBlackColor,
+  );
   static final TextStyle DrawerListBottomColorWhite = GoogleFonts.openSans(
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -25,5 +30,9 @@ class TextThemes {
     fontWeight: FontWeight.w500,
     color: AppColors.kPrimaryGreenColor,
   );
-
+  static final TextStyle offerTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+    color: AppColors.kLightBlueColor,
+  );
 }
