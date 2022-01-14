@@ -16,14 +16,15 @@ class AssetStrings {
       'assets/images/drawer_menu_icon8.png';
   static const String Fruits_And_Vegetable_PNG =
       'assets/images/drawer_menu_icon7.png';
-  static const String Dairy_PNG =
-      'assets/images/drawer_menu_icon6.png';
-  static const String Beverages_PNG =
-      'assets/images/drawer_menu_icon5.png';
+  static const String Dairy_PNG = 'assets/images/drawer_menu_icon6.png';
+  static const String Beverages_PNG = 'assets/images/drawer_menu_icon5.png';
   static const String Frozen_And_Canned_PNG =
       'assets/images/drawer_menu_icon15.png';
-  static const String Kids_care_PNG =
-      'assets/images/drawer_menu_icon4.png';
-  static const String Personal_PNG =
-      'assets/images/drawer_menu_icon3.png';
+  static const String Kids_care_PNG = 'assets/images/drawer_menu_icon4.png';
+  static const String Personal_PNG = 'assets/images/drawer_menu_icon3.png';
+  static const String CarouselBanner1_PNG = 'assets/images/carousel.png';
+  static const String CarouselBanner2_PNG = 'assets/images/carousel2.png';
+  static const String CarouselBanner3_PNG = 'assets/images/carousel3.png';
+  static const String CarouselBanner4_PNG = 'assets/images/carousel4.png';
+  static const String CarouselBanner5_PNG = 'assets/images/carousel5.png';
 }
