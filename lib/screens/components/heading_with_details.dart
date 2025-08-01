@@ -9,7 +9,7 @@ class ProductHeadingWithDetails extends StatelessWidget {
 
 
   ProductHeadingWithDetails(
-  {this.heading, this.headingDetails, this.HeadingSideColor});
+  {required this.heading, required this.headingDetails, required this.HeadingSideColor});
 
   @override
   Widget build(BuildContext context) {
